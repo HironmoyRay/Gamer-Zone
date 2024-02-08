@@ -1,1 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.title-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-div div{
+    display: flex;
+    justify-content: space-around;
+}
+.menu-div ul {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style: none;
+}
