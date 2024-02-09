@@ -1,20 +1,73 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 nav {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .title-div {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-.menu-div div{
-    display: flex;
-    justify-content: space-around;
+.title-img-div {
+  padding: 0px 10px;
+}
+.title {
+  font-size: 1.5rem;
+}
+.pink {
+  color: palevioletred;
+}
+.menu-div {
+  display: flex;
+  justify-content: center;
+  font-size: 1.25rem;
 }
 .menu-div ul {
   display: flex;
-  justify-content: space-between;
-  text-decoration: none;
+  align-items: center;
   list-style: none;
+}
+.menu-div li {
+  padding: 0px 10px;
+}
+.social-div {
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.social-div p {
+  padding: 0px 10px;
+}
+.social-div i {
+  padding: 0px 10px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Responsive Design For Mobile Device */
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+@media only screen and (max-width: 676px) {
+  nav {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .menu-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-div ul {
+    padding: 0px;
+  }
+  .menu-div ul {
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+  }
+  .menu-div li {
+    margin-bottom: 30px;
+  }
+  .social-div {
+    margin-top: 0px;
+    padding: 0px;
+  }
 }
