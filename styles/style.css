@@ -1,3 +1,7 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
 nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -14,31 +18,35 @@ nav {
   font-size: 1.5rem;
 }
 .pink {
-  color: palevioletred;
+  color: #ff42A5;
 }
 .menu-div {
   display: flex;
   justify-content: center;
   font-size: 1.25rem;
+padding: 0px 20px;
 }
 .menu-div ul {
   display: flex;
   align-items: center;
+  text-align: center;
+  padding: 0px;
   list-style: none;
 }
 .menu-div li {
-  padding: 0px 10px;
+  width: 100px;
 }
 .social-div {
   display: flex;
   align-items: center;
   background-color: whitesmoke;
   margin: 20px;
-  padding: 10px;
   border-radius: 10px;
 }
 .social-div p {
-  padding: 0px 10px;
+  margin: 0px;
+  padding: 10px;
+  width: 120px;
 }
 .social-div i {
   padding: 0px 10px;
@@ -50,6 +58,10 @@ nav {
 @media only screen and (max-width: 676px) {
   nav {
     grid-template-columns: repeat(1, 1fr);
+    margin-top: 20px;
+  }
+  .title-div{
+    margin-bottom: 30px;
   }
   .menu-div {
     flex-direction: column;
