@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
 }
-.primary-color{
+.primary-color {
   color: #ff42a5;
 }
 .secondary-color {
@@ -184,24 +184,27 @@ p {
   text-align: center;
   opacity: 1;
 }
+.cart-img p {
+  margin-top: 30px;
+}
 .cart-img img {
   width: 90%;
   padding: 10px;
 }
 
-.cart-img:hover{
+.cart-img:hover img {
   opacity: 0.3;
 }
-.hover-div{
+.hover-div {
   display: none;
-  
 }
-.cart-img:hover .hover-div{
+.cart-img:hover .hover-div {
   display: block;
   position: relative;
-  bottom: 200px; 
-  
+  top: 250px;
+  font-size: 1.25rem;
 }
+
 .carts small {
   font-weight: bold;
   margin-left: 20px;
