@@ -2,6 +2,12 @@
   margin: 0px;
   padding: 0px;
 }
+.primary-color{
+  color: #ff42a5;
+}
+.secondary-color {
+  color: #9900cc;
+}
 /* ///////////////////////// */
 /* Header Section */
 /* ///////////////////////// */
@@ -49,6 +55,7 @@ nav {
 .social-div p {
   margin: 0px;
   padding: 10px;
+  color: black;
   width: 120px;
 }
 .social-div i {
@@ -114,8 +121,9 @@ button {
 .bannar-img-div img {
   width: 80%;
 }
-
+/* //////////////////////////// */
 /* Gamer Section */
+/* //////////////////////////// */
 .gamer-section {
   display: flex;
   align-items: center;
@@ -124,6 +132,7 @@ button {
 }
 .gamer-img-div {
   width: 100%;
+  margin: 0px 50px;
 }
 .gamer-img-div img {
   width: 100%;
@@ -131,6 +140,7 @@ button {
 .gamer-description {
   width: 75%;
   text-align: right;
+  margin: 0px 50px;
 }
 .gamer-description h3 {
   color: #9900cc;
@@ -140,16 +150,62 @@ button {
 .gamer-description small,
 p {
   color: #635d71;
-
 }
 .gamer-description h4 {
   color: #534c64;
   font-size: 1.25rem;
   font-weight: bold;
 }
-
 .btn-know-more {
   background-color: #ff42a5;
+}
+
+/* ///////////////////// */
+/* Cart Section */
+/* ////////////////////// */
+.cart-description {
+  text-align: center;
+  margin: 20px;
+}
+.cart-description h3 {
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+.cart-description small {
+  color: #8e8a98;
+  font-weight: bold;
+}
+.carts-div {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.cart-img {
+  text-align: center;
+  opacity: 1;
+}
+.cart-img img {
+  width: 90%;
+  padding: 10px;
+}
+
+.cart-img:hover{
+  opacity: 0.3;
+}
+.hover-div{
+  display: none;
+  
+}
+.cart-img:hover .hover-div{
+  display: block;
+  position: relative;
+  bottom: 200px; 
+  
+}
+.carts small {
+  font-weight: bold;
+  margin-left: 20px;
+  color: #534c64;
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -182,7 +238,7 @@ p {
     padding: 0px;
   }
   /* ////////////////////// */
-  /* Bannar Section */
+  /* Responsive Bannar Section for Mobile Device */
   /* /////////////////// */
   .bannar-section {
     flex-direction: column-reverse;
@@ -195,13 +251,28 @@ p {
     background-repeat: no-repeat;
   }
   /* /////////////////////// */
-  /* Gamer Section */
+  /* Responsive Gamer Section for Mobile Device*/
   /* ////////////////////// */
   .gamer-section {
     flex-direction: column;
     background-color: white;
   }
-  .gamer-description{
+  .gamer-description {
     text-align: center;
+  }
+  .btn-know-more {
+    margin-left: 0px;
+  }
+  /* ///////////////////// */
+  /*Responsive Cart Section for Mobile Section*/
+  /* ////////////////////// */
+  .carts-div {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cart-img img {
+    width: 75%;
+    padding-top: 30px;
+    padding-bottom: 5px;
   }
 }
