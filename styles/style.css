@@ -150,6 +150,7 @@ button {
 .gamer-description small,
 p {
   color: #635d71;
+  font-size: 1.05rem;
 }
 .gamer-description h4 {
   color: #534c64;
@@ -163,6 +164,9 @@ p {
 /* ///////////////////// */
 /* Cart Section */
 /* ////////////////////// */
+.cart-section{
+  margin: 10px 20px;
+}
 .cart-description {
   text-align: center;
   margin: 20px;
@@ -183,6 +187,7 @@ p {
 .cart-img {
   text-align: center;
   opacity: 1;
+  
 }
 .cart-img p {
   margin-top: 30px;
@@ -201,7 +206,7 @@ p {
 .cart-img:hover .hover-div {
   display: block;
   position: relative;
-  top: 250px;
+  top: 200px;
   font-size: 1.25rem;
 }
 
@@ -209,6 +214,84 @@ p {
   font-weight: bold;
   margin-left: 20px;
   color: #534c64;
+}
+/* ///////////////////////////// */
+/* Feature Section */
+/* //////////////////////////// */
+
+.feature-1{
+  display: flex;
+  align-items: center;
+  margin: 50px 20px;
+  padding-top: 50px;
+
+}
+.feature-description{
+  padding: 20px;
+  text-align: right;
+  width: 100%;
+}
+.feature-description h3{
+  font-size: 3rem;
+}
+.feature-img-div{
+  text-align: center;
+  width: 100%;
+}
+.feature-img-div{
+display: flex;
+flex-direction: column;
+position: relative;
+}
+.feature-img{
+  width: 100%;
+}
+.feature-img img{
+  width: 50%;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.relative-img{
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  width: 25%;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.relative-img img{
+  width: 100%;
+}
+.feature-2{
+  display: flex;
+  align-items: center;
+  margin: 50px 20px;
+  padding-top: 50px;
+
+}
+.feature-description-2{
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+}
+.feature-description-2 h3{
+  font-size: 3rem;
+}
+
+.relative-img-2{
+  position: absolute;
+  top: 60%;
+  right: 10%;
+  width: 25%;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.relative-img-2 img{
+  width: 100%;
+}
+.feature-section small{
+  color:#635d71;
+  font-size: 1.05rem;
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -269,6 +352,7 @@ p {
   /* ///////////////////// */
   /*Responsive Cart Section for Mobile Section*/
   /* ////////////////////// */
+
   .carts-div {
     flex-direction: column;
     text-align: center;
@@ -277,5 +361,40 @@ p {
     width: 75%;
     padding-top: 30px;
     padding-bottom: 5px;
+  }
+  .cart-img:hover .hover-div {
+    top: 300px;
+  }
+
+  /* ///////////////////////////////////////// */
+  /*Responsive Feature Section for Mobile Device */
+  /* ////////////////////////////////////////// */
+  .feature-1{
+    flex-direction: column;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .feature-description{
+    text-align: center;
+  }
+ 
+  .feature-2{
+    flex-direction: column-reverse;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .feature-description-2{
+    text-align: center;
+  }
+
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Responsive Design For Tablet Device */
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+@media only screen and (min-width: 676px) and (max-width: 992px) {
+  /* Cart Section for Tablet Device */
+  .cart-img:hover .hover-div {
+    top: 150px;
   }
 }
