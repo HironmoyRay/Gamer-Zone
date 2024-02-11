@@ -364,7 +364,6 @@ p {
 }
 .game{
   display: flex;
-  flex-wrap:wrap;
   align-items: center;
   background-color: whitesmoke;
   border: 2px solid white;
@@ -386,6 +385,55 @@ p {
   padding-left: 10px;
   font-weight: bold;
   color: black;
+}
+
+/* //////////////////////// */
+/* Footer Section */
+/* //////////////////////// */
+footer{
+  background-color: #0b0223;
+  color: white;
+  padding:30px 20px;
+}
+.footer-title-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
+.footer-support-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.footer-support-section h4{
+  padding: 10px 20px;
+}
+.footer-social{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+.footer-social i{
+  margin: 10px;
+  padding: 10px 20px;
+}
+.footer-privacy{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer-privacy p{
+  padding: 10px 20px;
+  color:white;
+}
+.footer-copy-right{
+  text-align: center;
+  margin: 20px;
 }
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 /* Responsive Design For Mobile Device */
