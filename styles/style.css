@@ -361,7 +361,7 @@ p {
 .games {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   justify-content: center;
   padding: 20px;
@@ -409,7 +409,7 @@ footer {
 }
 .footer-support-section {
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   text-align: center;
   margin: 0px 200px;
   padding: 20px;
@@ -419,7 +419,7 @@ footer {
 }
 .footer-social {
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   text-align: center;
   margin: 0px 200px;
   padding: 20px;
@@ -568,12 +568,12 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
   /* Footer Section for Mobile Device */
-  .footer-support-section{
-    grid-template-columns: repeat(3,1fr);
+  .footer-support-section {
+    grid-template-columns: repeat(3, 1fr);
     margin: 0px;
-  } 
-  .footer-social{
-    grid-template-columns: repeat(3,1fr);
+  }
+  .footer-social {
+    grid-template-columns: repeat(3, 1fr);
     margin: 0px;
   }
 }
@@ -588,11 +588,16 @@ footer {
   .bannar-section {
     flex-direction: column;
   }
+  .bannar-img-div {
+    margin: 0px;
+  }
+
   /* //////////////////////////////////////////// */
   /*Responsive Gamer Section for Tablet Device */
   /* /////////////////////////////////////////// */
   .gamer-section {
     flex-direction: column-reverse;
+    padding: 0px;
   }
   /* //////////////////////////////////////////// */
   /*Responsive Cart Section for Tablet Device */
@@ -601,18 +606,28 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  /* Responsive Career Section for Tablet Device */
+  .career-description {
+    padding: 20px;
+  }
+  .career-align h4 {
+    padding: 0px;
+  }
+  .career-img-div {
+    width: 50%;
+  }
   /* Responsive Games Section for Tablet Device */
   .games {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-   /* Footer Section for Tablet Device */
-   .footer-support-section{
-    grid-template-columns: repeat(3,1fr);
+  /* Footer Section for Tablet Device */
+  .footer-support-section {
+    grid-template-columns: repeat(3, 1fr);
     margin: 0px 50px;
-  } 
-   .footer-social{
-    grid-template-columns: repeat(3,1fr);
+  }
+  .footer-social {
+    grid-template-columns: repeat(3, 1fr);
     margin: 0px 50px;
   }
 }
