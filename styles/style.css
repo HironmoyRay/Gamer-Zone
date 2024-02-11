@@ -184,7 +184,7 @@ p {
   justify-content: space-around;
   padding-top: 20px;
 }
-.carts{
+.carts {
   padding: 10px;
 }
 .cart-img {
@@ -206,9 +206,9 @@ p {
 .hover-div {
   display: none;
 }
-.hover-div p{
+.hover-div p {
   font-weight: bolder;
-  background-color:white;
+  background-color: white;
 }
 .cart-img:hover .hover-div {
   display: block;
@@ -217,7 +217,7 @@ p {
   left: 40%;
   font-size: 3rem;
 }
-.small{
+.small {
   margin-left: 20px;
 }
 .small small {
@@ -273,8 +273,9 @@ p {
 .feature-2 {
   display: flex;
   align-items: center;
-  margin: 50px 20px;
+  margin: 50px;
   padding-top: 50px;
+  padding-bottom: 100px;
 }
 .feature-description-2 {
   padding: 20px;
@@ -300,7 +301,92 @@ p {
   color: #635d71;
   font-size: 1.05rem;
 }
-
+/* /////////////////// */
+/* Career Section */
+/* /////////////////// */
+.career-section {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  background-color: #ff42a5;
+  background-image: url(../images/Group\ 14.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.career-description {
+  width: 100%;
+  padding: 20px 100px;
+}
+.career-description h3 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 20px;
+}
+.career-description p {
+  color: white;
+  margin-bottom: 20px;
+}
+.career-description h4 {
+  color: white;
+  padding-bottom: 5px;
+}
+.career-align {
+  display: flex;
+  justify-content: space-between;
+}
+.left-align {
+  text-align: left;
+}
+.right-align {
+  text-align: right;
+}
+.career-description button {
+  font-weight: bolder;
+  margin: 10px 0px;
+  background-color: white;
+}
+.career-img-div {
+  width: 100%;
+  text-align: center;
+}
+.career-img-div img {
+  width: 100%;
+}
+  /* /////////////////// */
+/* Game Section */
+/* ///////////////////// */
+.games{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.game{
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+  background-color: whitesmoke;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin: 10px 20px;
+  padding: 5px 20px;
+}
+.game:hover{
+  
+  border:2px solid #ff42a5;
+}
+.game:hover p{
+  color: #ff42a5;
+}
+.game img{
+  padding-right: 10px;
+}
+.game p{
+  padding-left: 10px;
+  font-weight: bold;
+  color: black;
+}
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 /* Responsive Design For Mobile Device */
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -368,6 +454,28 @@ p {
     width: 75%;
     padding-top: 30px;
     padding-bottom: 5px;
+  }
+
+  /* /////////////////// */
+  /* Responsive Career Section for Mobile Device */
+  /* /////////////////// */
+  .career-section {
+    flex-direction: column;
+  }
+  .career-description{
+    padding: 0px;
+  }
+  .career-description h3{
+    margin: 10px 30px;
+  }
+  .career-description p{
+    margin: 10px 30px;
+  }
+  .career-align{
+    margin: 10px 30px;
+  }
+  .career-description button{
+    margin: 10px 30px;
   }
 
   /* ///////////////////////////////////////// */
